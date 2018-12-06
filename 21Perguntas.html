@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title>21 Perguntas Erradas</title>
+	<script src="./jquery-3.3.1.js"></script>
+	<script src="./21perguntas.js"></script>
+<style type="text/css">
+  body  {
+  	margin: 0px;
+  	border: 0px;
+  	margin-top: 0px;
+  	padding: 0px;
+  	background-color: #050;
+  }
+  .titulo { color: #FF0;
+  	margin: 0px;
+  	border: 0px;
+  	background-color: #040;
+  	font-size: 40px;
+  	text-shadow: 2px 2px 2px #000000;
+  }
+  .numPerg { color: #880;
+  	font-size: 20px;
+   }
+  #timer {
+   	color: #000;
+  	background-color: #9F9;
+  	font-size: 28px;
+   }
+   #divPergunta{
+   	background-color: #AFA;
+   }
+   .opcao {
+   	font-size: 26px;
+   }
+   #textoPergunta{
+   	font-style: italic;
+   	font-size: 28px;
+   }
+   #timeAttack{
+   	display: none;
+   }
+   footer { 
+    height: 40px; 
+    position: fixed; 
+    bottom:0%;
+    width:100%; 
+    background-color: #393838; 
+    opacity: 1;
+   }
+</style>
+</head>
+<body>
+	<div class="titulo">21 Perguntas Erradas! SIPAT - P-07</div>
+	<div>Perguntas: <span class="numPerg" id="numPerg1"> 1 </span>
+		<span class="numPerg" id="numPerg2"> 2 </span>
+		<span class="numPerg" id="numPerg3"> 3 </span>
+		<span class="numPerg" id="numPerg4"> 4 </span>
+		<span class="numPerg" id="numPerg5"> 5 </span>
+		<span class="numPerg" id="numPerg6"> 6 </span>
+		<span class="numPerg" id="numPerg7"> 7 </span>
+		<span class="numPerg" id="numPerg8"> 8 </span>
+		<span class="numPerg" id="numPerg9"> 9 </span>
+		<span class="numPerg" id="numPerg10"> 10 </span>
+		<span class="numPerg" id="numPerg11"> 11 </span>
+		<span class="numPerg" id="numPerg12"> 12 </span>
+		<span class="numPerg" id="numPerg13"> 13 </span>
+		<span class="numPerg" id="numPerg14"> 14 </span>
+		<span class="numPerg" id="numPerg15"> 15 </span>
+		<span class="numPerg" id="numPerg16"> 16 </span>
+		<span class="numPerg" id="numPerg17"> 17 </span>
+		<span class="numPerg" id="numPerg18"> 18 </span>
+		<span class="numPerg" id="numPerg19"> 19 </span>
+		<span class="numPerg" id="numPerg20"> 20 </span>
+		<span class="numPerg" id="numPerg21"> 21 </span>
+	</div>
+	<div id="timer"><span class="textoTimer" id="texto">Tempo Restante:</span><span class="textoTimer" id="minutos"></span> &apos; <span class=textoTimer" id="segundos"></span> &quot;</div>
+	<hr>
+	<div id="divPergunta">
+		<div> &rarr; <span class="opcao" id="opcao1">Eggs<span></div>
+		<div> &rarr; <span class="opcao" id="opcao2">Bacon<span></div>
+		<div id="textoPergunta">Qual deles vem da galinha?</div>
+	</div>
+<footer>Versão: <select><option value="1" selected="true">versão 1</option><option value="2">versão2</option></select>
+<button id=iniciar onclick="iniciar()">iniciar</button></footer>
+</body>
+</html>
