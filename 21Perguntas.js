@@ -106,7 +106,7 @@ var perguntasDois = [
 	new Pergunta("Popa", "Polpa", "Onde ficam as bombas de incêndio diesel da P-07?"),
 	new Pergunta("Heliponto", "Aeroporto", "Onde o helicóptero pousa na plataforma?"),
 	new Pergunta("NR-10", "NR-33", "Qual norma regulamenta trabalhos elétricos?"),
-	new Pergunta("Bóia Circular", "Bóia de Braço", "Qual é jogada para "homem ao mar"?"),
+	new Pergunta("Bóia Circular", "Bóia de Braço", "Qual é jogada para 'homem ao mar'?"),
 	new Pergunta("Espaço confinado", "Espaço com falecido", "Como é considerado o interior dos tanques de lastro de P-07?"),
 	new Pergunta("Bomba", "Dinamite", "Qual é utilizada para movimentar fluidos?"),
 	new Pergunta("Marinha", "Exército", "Qual orgão fiscaliza a plataforma?"),
@@ -120,7 +120,7 @@ var perguntasDois = [
 	new Pergunta("POB", "BOP", "Qual deles representa o efetivo total da plataforma?"),
 	new Pergunta("APLAT", "SAP", "Qual o sistema utilizado para emissão de PT?"),
 	new Pergunta("PT Elétrica", "PQ a Quente", "Qual delas é utilizada para serviços elétricos?"),
-	new Pergunta("Külkamp", "Ku Klux Klan", "Qual o sobrenome do Presidente da CIPA"),
+	new Pergunta("Külkamp", "Ku Klux Klan", "Qual o sobrenome do Presidente da CIPA")
 ];
 
 var tempo = 180;
