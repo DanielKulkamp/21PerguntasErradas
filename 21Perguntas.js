@@ -123,6 +123,30 @@ var perguntasDois = [
 	new Pergunta("Külkamp", "Ku Klux Klan", "Qual o sobrenome do Presidente da CIPA")
 ];
 
+var perguntasDois = [
+	new Pergunta("Comece e termine o dia com segurança", "Comece o dia com segurança, mas desista no meio do caminho", "Qual o tema da SIPAT de 2018?"),
+	new Pergunta("Com a autorização do responsável", "Se não tiver ninguém vendo", "Em que situação se pode entrar em área isolada?"),
+	new Pergunta("Matriz de Trabalho Energizado", "Colhões de Aço", "O que é indispensável para serviços elétricos energizados?"),
+	new Pergunta("Remo", "Payssandu", "Qual compõe a palamenta da baleeira do mestre Fiel?"),
+	new Pergunta("3FWD3", "9PSL", "Qual o indicativo de chamada da plataforma?"),
+	new Pergunta("ALPH", "GEPLAT", "Quem é o lider da EMCIA?"),
+	new Pergunta("..-", "...---...", "Qual o códio Morse para a letra U?"),
+	new Pergunta("", "", "Como é considerado o interior dos tanques de lastro de P-07?"),
+	new Pergunta("Bomba", "Dinamite", "Qual é utilizada para movimentar fluidos?"),
+	new Pergunta("Marinha", "Exército", "Qual orgão fiscaliza a plataforma?"),
+	new Pergunta("Rádio VHF", "Rádio UHF", "Qual é utilizado para comunicação entre plataformas e embarcações de apoio?"),
+	new Pergunta("Semi Submersível", "FDPSO", "A P-07 é uma plataforma de qual tipo?"),
+	new Pergunta("Vigia", "Gandula", "Quem monitora a entrada do espaço confinado?"),
+	new Pergunta("Luva", "Capacete", "Qual EPI protege mãos e dedos?"),
+	new Pergunta("Bote de resgate", "Baleeira", "Qual equipamento é utilizado preferencialmente para resgate de homem ao mar?"),
+	new Pergunta("Espaço Confinado", "Camarote", "Qual não foi projetado para a permanência humana?"),
+	new Pergunta("PT a Quente", "PT Elétrica", "Qual é utilizada para trabalhos com solda elétrica?"),
+	new Pergunta("POB", "BOP", "Qual deles representa o efetivo total da plataforma?"),
+	new Pergunta("APLAT", "SAP", "Qual o sistema utilizado para emissão de PT?"),
+	new Pergunta("PT Elétrica", "PQ a Quente", "Qual delas é utilizada para serviços elétricos?"),
+	new Pergunta("Külkamp", "Ku Klux Klan", "Qual o sobrenome do Presidente da CIPA")
+];
+
 var tempo = 180;
 var perguntaAtual = -1;
 var listaDePerguntas = [];
