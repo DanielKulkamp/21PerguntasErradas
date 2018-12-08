@@ -76,13 +76,19 @@
 	<div id="timer"><span class="textoTimer" id="texto">Tempo Restante: &nbsp; </span><span class="textoTimer" id="minutos"></span> &apos; <span class=textoTimer" id="segundos"></span> &quot;</div>
 	<hr>
 	<div id="divPergunta">
-		<div> &rarr; <span class="opcao" id="opcao1">Eggs<span></div>
+		<div> &rarr; <span class="opcao" id="opcao1">Ovos<span></div>
 		<div> &rarr; <span class="opcao" id="opcao2">Bacon<span></div>
     <hr>
 		<div id="textoPergunta">Qual deles vem da galinha?</div>
 	</div>
   <div id="divTimeAttack"></div>
-<footer>Versão: <select><option value="1" selected="true">versão 1</option><option value="2">versão2</option></select>
+<footer>Versão: <select id="selVers">
+  <option value="ver1" selected="true">versão 1</option>
+  <option value="ver2">versão 2</option>
+  <option value="ver3">versão 3</option>
+  <option value="ver4">versão 4</option>
+  <!-- <option value="ver3">versão 3</option>-->
+</select>
 <button id=iniciar onclick="iniciar()">iniciar</button><span id="message"></span></footer>
 </body>
 </html>
