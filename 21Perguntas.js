@@ -122,6 +122,29 @@ var catalogo = {
 		new Pergunta("Câncer de colo de útero", "Clamídia", "Qual dessas doenças pode ser causada pelo HPV?"),
 		new Pergunta("Candidíase", "HPV", "Contra qual desses não existe vacina?"),
 		new Pergunta("www.aids.gov.br", "www.xvideos.com", "Em qual site posso obter informações sobre AIDs e outras ISTs?")
+	] ,
+	"OUT": [
+		new Pergunta("Outubro Rosa", "Quatorzembro Trevoso", "Como é chamado o mês de conscientização sobre Câncer de Mama?"),
+		new Pergunta("Laço Cor de Rosa", "Pantera Cor de Rosa", "Qual o símbolo do Outubro Rosa?"),
+		new Pergunta("Na década de 90", "Na década de 00", "Quando surgiu a campanha?"),
+		new Pergunta("Eu cuido da minha saúde todos os dias. E você?", "Eu cuido da minha vida e você cuida da tua!", "Qual o lema do outrobro rosa 2021 no Brasil?"),
+		new Pergunta("divulgar informações sobre o câncer de mama e fortalecer as recomendações do Ministério da Saúde para prevenção, diagnóstico precoce e rastreamento da doença", "Equipes esportivas lucrarem com a venda de uniformes especiais na cor rosa", "Qual o objetivo do outubro rosa?"),
+		new Pergunta("24,5%", "10% do garçon", "Qual a taxa de Cancer de Mama entre os novos casos de neoplasia em mulheres?"),
+		new Pergunta("Sul e Sudeste", "Norte e Nordeste", "Em quais regiões brasileiras se concentram as maiores taxas de casos de cancer de mama ?"),
+		new Pergunta("Primeira", "Terceira", "Qual posição o Cancer de mama ocupa nas taxas de mortalidade por câncer em mulheres no Brasil e no Mundo?"),
+		new Pergunta("'Caroço' rígido indolor no seio, ou abaixo das axilas ou no pescoço.", "Vontade de comer rúcula ou chocolate ao leite", "Qual é o primeiro sintoma mais frequente do cancer de mama?"),
+		new Pergunta("Libido louca e insaciável", "pele da mama avermelhada ou parecida com casca de laranja, alterações no bico do peito (mamilo)", "Qual não representa sintoma de câncer de mama?"),
+		new Pergunta("Sedentarismo", "Vida sexual ativa após os 30 anos", "Qual representa um fator de risco para o câncer de mama?"),
+		new Pergunta("Consumo de bebida alcoólica", "Consumo de castanha do pará", "Qual representa um fator de risco para o câncer de mama?"),
+		new Pergunta("Primeira menstruação após os 14 anos", "Sobrepeso após a menopausa", "Qual não representa um fator de risco para o câncer de mama?"),
+		new Pergunta("Falso", "Verdadeiro", "O uso da pílula anticoncepcional não é fator de risco para o câncer de mama?"),
+		new Pergunta("Sim", "Não", "Não ter filhos ou primeira gravidez após os trinta é um fator de risco para câncer de mama?"),
+		new Pergunta("Claro que sim!", "Claro que não!", "Homem também pode ter câncer de mama?"),
+		new Pergunta("Alcool e outras drogas", "Permissão para trabalho", "Qual regra de ouro ajuda a proteger contra o câncer de mama?"),
+		new Pergunta("Auto-exame", "autópsia", "Para ser efetivo é fundamental que pessoa conheça o seu corpo e esteja atenta à mudanças?"),
+		new Pergunta("Pelo menos uma vez a cada dois anos", "Uma vez a cada título do Botafogo", "Qual a frequência recomendada de mamografia para mulhers acima de 50 anos independente de apresentar sintomas?"),
+		new Pergunta("Verdadeiro", "Falso", "A mamografia de rastreamento pode ajudar a reduzir a mortalidade por câncer de mama, mas também expõe a mulher a alguns riscos.?"),
+		new Pergunta("Verdadeiro", "Falso", "Em mulheres fora da faixa entre 50 a 69 anos, as mamografias de rotina provavelmente não trarão benefícios, e os riscos serão ainda maiores.?")
 	]};
 
 var tempo = 300;
