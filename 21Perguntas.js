@@ -24,6 +24,10 @@ function erro(){
 }
 
 
+document.addEventListener('DOMContentLoaded', (event)=>{
+	alert("oi!")
+	d
+})
 
 document.addEventListener('keydown', function(event){
     switch(event.keyCode){
@@ -78,96 +82,96 @@ function Pergunta(certo, errado, pergunta) {
 
 var catalogo = {
 	"ver1": [
-		new Pergunta("C", "A", "Qual tipo de incêndio é caracterizado pela presença de energia elétrica?"),
-		new Pergunta("Plástico", "Metal", "Qual tipo de resíduo deve ser descartado no contentor vermelho?"),
+		new Pergunta("C", "A", "Qual tipo de incÃªndio Ã© caracterizado pela presenï¿½a de energia elï¿½trica?"),
+		new Pergunta("Plï¿½stico", "Metal", "Qual tipo de resï¿½duo deve ser descartado no contentor vermelho?"),
 		new Pergunta("Acidentes", "Anomalias", "O que significa a letra A na sigla CIPA?"),
-		new Pergunta("Na área", "Na meia-lua", "Onde deve ser feita a baixa da PT?"),
-		new Pergunta("Você mesmo", "Jair Messias Bolsonaro", "Quem é o maior responsável pela sua segurança?"),
-		new Pergunta("Álcool e drogas", "Sexo, drogas e Rock&Roll", "Qua é o nome de uma das regras de ouro?"),
-		new Pergunta("Luva Nitrílica", "Luva de Raspas", "Qual é o EPI indicado para atividades de pintura?"),
-		new Pergunta("Nunca", "Só com camisinha", "Em que condição se pode entrar em atmosfera explosiva?"),
-		new Pergunta("TOR", "Capitão América", "Qual mede a Taxa de Ocorrências Registráveis?"),
-		new Pergunta("Pontoons", "Pantoons", "Como são chamados os flutuadores da plataforma?"),
-		new Pergunta("Água", "PQS", "Qual o tipo de extintor é o mais indicado para princípios de incêndio classe A?"),
-		new Pergunta("Atmosfera Explosiva", "Na dúvida Pare", "Qual é uma das regras de ouro?"),
-		new Pergunta("Na Entrada", "No Fumódromo", "Onde deve ficar o vigia do espaço confinado?"),
+		new Pergunta("Na ï¿½rea", "Na meia-lua", "Onde deve ser feita a baixa da PT?"),
+		new Pergunta("Vocï¿½ mesmo", "Jair Messias Bolsonaro", "Quem ï¿½ o maior responsï¿½vel pela sua seguranï¿½a?"),
+		new Pergunta("ï¿½lcool e drogas", "Sexo, drogas e Rock&Roll", "Qua ï¿½ o nome de uma das regras de ouro?"),
+		new Pergunta("Luva Nitrï¿½lica", "Luva de Raspas", "Qual ï¿½ o EPI indicado para atividades de pintura?"),
+		new Pergunta("Nunca", "Sï¿½ com camisinha", "Em que condiï¿½ï¿½o se pode entrar em atmosfera explosiva?"),
+		new Pergunta("TOR", "Capitï¿½o Amï¿½rica", "Qual mede a Taxa de Ocorrï¿½ncias Registrï¿½veis?"),
+		new Pergunta("Pontoons", "Pantoons", "Como sï¿½o chamados os flutuadores da plataforma?"),
+		new Pergunta("ï¿½gua", "PQS", "Qual o tipo de extintor ï¿½ o mais indicado para princï¿½pios de incï¿½ndio classe A?"),
+		new Pergunta("Atmosfera Explosiva", "Na dï¿½vida Pare", "Qual ï¿½ uma das regras de ouro?"),
+		new Pergunta("Na Entrada", "No Fumï¿½dromo", "Onde deve ficar o vigia do espaï¿½o confinado?"),
 		new	Pergunta("CESS", "CETB", "Qual curso credencia a pessoa a tripular uma baleeira?"),
-		new Pergunta("Técnico de Segurança", "RPM", "Qual deles NÃO faz parte do cartão de tripulação de segurança de P-07?"),
-		new Pergunta("Cipista eleito há mais dias a bordo", "GEPLAT", "Quem é o vice-presidente da CIPA?"),
-		new Pergunta("Diego Trezza", "NR-33", "Quem determina o que é e o que não é espaço confinado na UO-BC?"),
-		new Pergunta("Mestre de Cabotagem", "COEMB", "De acordo com o PRE das plataformas, quem é o líder do Grupo de Controle de Salvatagem?"),
-		new Pergunta("'Não sejes burro!'", "'Na dúvida pare!", "Qual frase esteve presente em quase todos DDSs do GEPLAT Daniel em 2018?"),
-		new Pergunta("Panama", "Ilhas Marshall", "Qual a bandeira de conveniência arvorada em P-07?"),
+		new Pergunta("Tï¿½cnico de Seguranï¿½a", "RPM", "Qual deles Nï¿½O faz parte do cartï¿½o de tripulaï¿½ï¿½o de seguranï¿½a de P-07?"),
+		new Pergunta("Cipista eleito hï¿½ mais dias a bordo", "GEPLAT", "Quem ï¿½ o vice-presidente da CIPA?"),
+		new Pergunta("Diego Trezza", "NR-33", "Quem determina o que ï¿½ e o que nï¿½o ï¿½ espaï¿½o confinado na UO-BC?"),
+		new Pergunta("Mestre de Cabotagem", "COEMB", "De acordo com o PRE das plataformas, quem ï¿½ o lï¿½der do Grupo de Controle de Salvatagem?"),
+		new Pergunta("'Nï¿½o sejes burro!'", "'Na dï¿½vida pare!", "Qual frase esteve presente em quase todos DDSs do GEPLAT Daniel em 2018?"),
+		new Pergunta("Panama", "Ilhas Marshall", "Qual a bandeira de conveniï¿½ncia arvorada em P-07?"),
 		new Pergunta("P-7", "P-15", "Qual plataforma tem a melhor SIPAT da bacia?"),
 	] ,
 	"ver2": [
-		new Pergunta("SIPAT", "SISPAT", "Qual o nome do evento que você está participando?"),
+		new Pergunta("SIPAT", "SISPAT", "Qual o nome do evento que vocï¿½ estï¿½ participando?"),
 		new Pergunta("Guindaste", "Dessalinizadora", "Qual o equipamento utilizado para movimentar cargas?"),
-		new Pergunta("Dessalinizadora", "Guindaste", "Qual o equipamento produz água potável?"),
-		new Pergunta("Popa", "Polpa", "Onde ficam as bombas de incêndio diesel da P-07?"),
-		new Pergunta("Heliponto", "Aeroporto", "Onde o helicóptero pousa na plataforma?"),
-		new Pergunta("NR-10", "NR-33", "Qual norma regulamenta trabalhos elétricos?"),
-		new Pergunta("Bóia Circular", "Bóia de Braço", "Qual é jogada para 'homem ao mar'?"),
-		new Pergunta("Espaço confinado", "Espaço com falecido", "Como é considerado o interior dos tanques de lastro de P-07?"),
-		new Pergunta("Bomba", "Dinamite", "Qual é utilizada para movimentar fluidos?"),
-		new Pergunta("Marinha", "Exército", "Qual orgão fiscaliza a plataforma?"),
-		new Pergunta("Rádio VHF", "Rádio UHF", "Qual é utilizado para comunicação entre plataformas e embarcações de apoio?"),
-		new Pergunta("Semi Submersível", "FDPSO", "A P-07 é uma plataforma de qual tipo?"),
-		new Pergunta("Vigia", "Gandula", "Quem monitora a entrada do espaço confinado?"),
-		new Pergunta("Luva", "Capacete", "Qual EPI protege mãos e dedos?"),
-		new Pergunta("Bote de resgate", "Baleeira", "Qual equipamento é utilizado preferencialmente para resgate de homem ao mar?"),
-		new Pergunta("Espaço Confinado", "Camarote", "Qual não foi projetado para a permanência humana?"),
-		new Pergunta("PT a Quente", "PT Elétrica", "Qual é utilizada para trabalhos com solda elétrica?"),
+		new Pergunta("Dessalinizadora", "Guindaste", "Qual o equipamento produz ï¿½gua potï¿½vel?"),
+		new Pergunta("Popa", "Polpa", "Onde ficam as bombas de incï¿½ndio diesel da P-07?"),
+		new Pergunta("Heliponto", "Aeroporto", "Onde o helicï¿½ptero pousa na plataforma?"),
+		new Pergunta("NR-10", "NR-33", "Qual norma regulamenta trabalhos elï¿½tricos?"),
+		new Pergunta("Bï¿½ia Circular", "Bï¿½ia de Braï¿½o", "Qual ï¿½ jogada para 'homem ao mar'?"),
+		new Pergunta("Espaï¿½o confinado", "Espaï¿½o com falecido", "Como ï¿½ considerado o interior dos tanques de lastro de P-07?"),
+		new Pergunta("Bomba", "Dinamite", "Qual ï¿½ utilizada para movimentar fluidos?"),
+		new Pergunta("Marinha", "Exï¿½rcito", "Qual orgï¿½o fiscaliza a plataforma?"),
+		new Pergunta("Rï¿½dio VHF", "Rï¿½dio UHF", "Qual ï¿½ utilizado para comunicaï¿½ï¿½o entre plataformas e embarcaï¿½ï¿½es de apoio?"),
+		new Pergunta("Semi Submersï¿½vel", "FDPSO", "A P-07 ï¿½ uma plataforma de qual tipo?"),
+		new Pergunta("Vigia", "Gandula", "Quem monitora a entrada do espaï¿½o confinado?"),
+		new Pergunta("Luva", "Capacete", "Qual EPI protege mï¿½os e dedos?"),
+		new Pergunta("Bote de resgate", "Baleeira", "Qual equipamento ï¿½ utilizado preferencialmente para resgate de homem ao mar?"),
+		new Pergunta("Espaï¿½o Confinado", "Camarote", "Qual nï¿½o foi projetado para a permanï¿½ncia humana?"),
+		new Pergunta("PT a Quente", "PT Elï¿½trica", "Qual ï¿½ utilizada para trabalhos com solda elï¿½trica?"),
 		new Pergunta("POB", "BOP", "Qual deles representa o efetivo total da plataforma?"),
-		new Pergunta("APLAT", "SAP", "Qual o sistema utilizado para emissão de PT?"),
-		new Pergunta("PT Elétrica", "PQ a Quente", "Qual delas é utilizada para serviços elétricos?"),
-		new Pergunta("Külkamp", "Ku Klux Klan", "Qual o sobrenome do Presidente da CIPA")
+		new Pergunta("APLAT", "SAP", "Qual o sistema utilizado para emissï¿½o de PT?"),
+		new Pergunta("PT Elï¿½trica", "PQ a Quente", "Qual delas ï¿½ utilizada para serviï¿½os elï¿½tricos?"),
+		new Pergunta("Kï¿½lkamp", "Ku Klux Klan", "Qual o sobrenome do Presidente da CIPA")
 	] ,
 	"ver3": [
-		new Pergunta("Comece e termine o dia com segurança", "Comece o dia com segurança, mas desista no meio do caminho", "Qual o tema da SIPAT de 2018?"),
-		new Pergunta("Com a autorização do responsável", "Se não tiver ninguém vendo", "Em que situação se pode entrar em área isolada?"),
-		new Pergunta("Matriz de Trabalho em Equipamento Energizado", "Colhões de Aço", "O que é indispensável para serviços elétricos energizados?"),
-		new Pergunta("Remo", "Payssandu", "Qual compõe a palamenta da baleeira do mestre Fiel?"),
+		new Pergunta("Comece e termine o dia com seguranï¿½a", "Comece o dia com seguranï¿½a, mas desista no meio do caminho", "Qual o tema da SIPAT de 2018?"),
+		new Pergunta("Com a autorizaï¿½ï¿½o do responsï¿½vel", "Se nï¿½o tiver ninguï¿½m vendo", "Em que situaï¿½ï¿½o se pode entrar em ï¿½rea isolada?"),
+		new Pergunta("Matriz de Trabalho em Equipamento Energizado", "Colhï¿½es de Aï¿½o", "O que ï¿½ indispensï¿½vel para serviï¿½os elï¿½tricos energizados?"),
+		new Pergunta("Remo", "Payssandu", "Qual compï¿½e a palamenta da baleeira do mestre Fiel?"),
 		new Pergunta("3FWD3", "9PSL", "Qual o indicativo de chamada da plataforma?"),
-		new Pergunta("ALPH", "GEPLAT", "Quem é o lider da EMCIA?"),
-		new Pergunta("..-", "...---...", "Qual o códio Morse para a letra U?"),
-		new Pergunta("'Estou dando Atrás'", "Chulispa!", "O que significa quando uma embarcação dá 3 apitos curtos?"),
-		new Pergunta("PT", "PSL", "Qual documento Libera a execução de um Serviço e é título de uma regra de ouro?"),
-		new Pergunta("GM", "SIGM", "Qual sistema é atualmente utilizado para gestão de mudanças?"),
-		new Pergunta("TAR < 1", "Redução da alavancagem", "Para qual meta de topo da PETROBRAS a P-7 pode contribuir positivamente?"),
-		new Pergunta("Rádio VHF", "Rádio UHF", "Qual é utilizado para comunicação entre plataformas e embarcações de apoio?"),
-		new Pergunta("Não", "Sim", "Serviços de instrumentação alimentados em extra-baixa tensão e posteriores a elementos que limitam o nível de curto são considerados 'serviços elétricos'?"),
-		new Pergunta("Luva", "Capacete", "Qual EPI protege mãos e dedos?"),
-		new Pergunta("Gerente de Instalação Operacional", "GEPLAT", "Quem é responsável pela autirização de um bypasse de longa duração de um elemento iniciador de ESD-3?"),
-		new Pergunta("Programa Amigo do Peito", "Programa Amigos amigos, negócios à parte", "Qual programa foi criado como iniciativa de evolução da cultura de segurança e envolve troca de cartões?"),
-		new Pergunta("Arco Elétrico", "Arco-íris de energia", "Qual é um perigo associado ao trabalho em salas de painéis elétricos?"),
-		new Pergunta("Cachorro", "Gato", "Qual é um componente de segurança do guincho de âncora?"),
-		new Pergunta("Gato", "Cachorro", "Qual deles está associado ao sistema de içamento do bote de resgate?"),
-		new Pergunta("Isolamento de Energias", "Não sejes porco", "Qual regra de ouro passou por reformulação em 2018?"),
-		new Pergunta("Bendoran", "Atlantic III", "Qual já foi um nome da plataforma?")
+		new Pergunta("ALPH", "GEPLAT", "Quem ï¿½ o lider da EMCIA?"),
+		new Pergunta("..-", "...---...", "Qual o cï¿½dio Morse para a letra U?"),
+		new Pergunta("'Estou dando Atrï¿½s'", "Chulispa!", "O que significa quando uma embarcaï¿½ï¿½o dï¿½ 3 apitos curtos?"),
+		new Pergunta("PT", "PSL", "Qual documento Libera a execuï¿½ï¿½o de um Serviï¿½o e ï¿½ tï¿½tulo de uma regra de ouro?"),
+		new Pergunta("GM", "SIGM", "Qual sistema ï¿½ atualmente utilizado para gestï¿½o de mudanï¿½as?"),
+		new Pergunta("TAR < 1", "Reduï¿½ï¿½o da alavancagem", "Para qual meta de topo da PETROBRAS a P-7 pode contribuir positivamente?"),
+		new Pergunta("Rï¿½dio VHF", "Rï¿½dio UHF", "Qual ï¿½ utilizado para comunicaï¿½ï¿½o entre plataformas e embarcaï¿½ï¿½es de apoio?"),
+		new Pergunta("Nï¿½o", "Sim", "Serviï¿½os de instrumentaï¿½ï¿½o alimentados em extra-baixa tensï¿½o e posteriores a elementos que limitam o nï¿½vel de curto sï¿½o considerados 'serviï¿½os elï¿½tricos'?"),
+		new Pergunta("Luva", "Capacete", "Qual EPI protege mï¿½os e dedos?"),
+		new Pergunta("Gerente de Instalaï¿½ï¿½o Operacional", "GEPLAT", "Quem ï¿½ responsï¿½vel pela autirizaï¿½ï¿½o de um bypasse de longa duraï¿½ï¿½o de um elemento iniciador de ESD-3?"),
+		new Pergunta("Programa Amigo do Peito", "Programa Amigos amigos, negï¿½cios ï¿½ parte", "Qual programa foi criado como iniciativa de evoluï¿½ï¿½o da cultura de seguranï¿½a e envolve troca de cartï¿½es?"),
+		new Pergunta("Arco Elï¿½trico", "Arco-ï¿½ris de energia", "Qual ï¿½ um perigo associado ao trabalho em salas de painï¿½is elï¿½tricos?"),
+		new Pergunta("Cachorro", "Gato", "Qual ï¿½ um componente de seguranï¿½a do guincho de ï¿½ncora?"),
+		new Pergunta("Gato", "Cachorro", "Qual deles estï¿½ associado ao sistema de iï¿½amento do bote de resgate?"),
+		new Pergunta("Isolamento de Energias", "Nï¿½o sejes porco", "Qual regra de ouro passou por reformulaï¿½ï¿½o em 2018?"),
+		new Pergunta("Bendoran", "Atlantic III", "Qual jï¿½ foi um nome da plataforma?")
 	],
 	"ver4": [
-		new Pergunta("Mensalmente, conforme condições de mar", "Só quando o GEPLAT Daniel embarca", "Com que frequência deve ser feito teste de navegabilidade do bote de resgate?"),
-		new Pergunta("2", "3", "Em que canal está sintonizado o rádio UHF do Enfermeiro?"),
-		new Pergunta("Com dupla proteção auricular", "Completamente nu devido ao forte calor", "Como se deve trabalhar na sala de máquinas?"),
-		new Pergunta("Colete Salva Vidas", "Mascara de Fuga", "Qual EPI é indicado para trabalhos sobre o mar?"),
-		new Pergunta("9PSL", "3FWD3", "Qual o código de aerodromo privado de P-07?"),
-		new Pergunta("Radio-operador de Plataforma Maritma", "Revoluções por Minuto", "Qual RPM deve possuir carteira de registro junto à bandeira panamenha?"),
-		new Pergunta("U", "F", "Qual letra é sinalizada em código morse pela buzina de cerração?"),
-		new Pergunta("RIPEAM", "RIPANÃOCHORÁ", "Qual o regulamento internacional para evitar abalroamentos no mar?"),
-		new Pergunta("Escada Portátil", "Caixote Robusto", "Qual deve ser utilizado para acessar partes altas de um armário?"),
-		new Pergunta("11 Atitudes da UO-BC", "Regra inominável de Diamante", "Qual é a iniciativa oficial da UO-BC para melhoria da qualidade dos relacionamentos no ambiente de trabalho?"),
-		new Pergunta("Utiliza o trava quedas", "Segura na mão de Deus e vai", "O que se faz para acessar a sala de bombas de P-07?"),
-		new Pergunta("Grupo de Controle da Fonte", "Grupo de Controle de Impacto", "Qual grupo é responsável pela segurança da planta de processos durante uma faina de emergências?"),
-		new Pergunta("Água salgada", "Pó químico ABC", "Qual NÃO deve ser utilizado como extintor em princípios de incêndio classe C?"),
-		new Pergunta("Dois Cipistas eleitos", "Três Cipistas indicados", "A presença de quais membros é um requisito para a realização da reunião da CIPA?"),
-		new Pergunta("Quinzenal", "A cada 21 dias", "De acordo com o PP-3UBC-00402, qual a frequência de treinamentos do cenário de incêndio?"),
-		new Pergunta("3", "1", "Se a frequência do treinamento de do cenário de desastres naturais é anual, ao todo quantos treinamentos desse cenário devem ter sido realizados em 2018?"),
-		new Pergunta("Salto na água", "Abdução por seres do planeta Nibiru", "Qual a última opção para abandono de uma unidade marítma em emergência?"),
-		new Pergunta("Fibras", "Cabos coaxiais", "O consumo de qual está associado à sensação de saciedade e à motilidade intestinal?"),
-		new Pergunta("Punição", "Reflexão", "Qual não faz parte do programa amigo do peito?"),
-		new Pergunta("Frustração", "Santa Catarina", "Qual é um estado crítico?"),
-		new Pergunta("Safe Start", "Manual de Segurança do E&P", "A qual deles são associados os conceitos de Estados críticos e erros críticos?")
+		new Pergunta("Mensalmente, conforme condiï¿½ï¿½es de mar", "Sï¿½ quando o GEPLAT Daniel embarca", "Com que frequï¿½ncia deve ser feito teste de navegabilidade do bote de resgate?"),
+		new Pergunta("2", "3", "Em que canal estï¿½ sintonizado o rï¿½dio UHF do Enfermeiro?"),
+		new Pergunta("Com dupla proteï¿½ï¿½o auricular", "Completamente nu devido ao forte calor", "Como se deve trabalhar na sala de mï¿½quinas?"),
+		new Pergunta("Colete Salva Vidas", "Mascara de Fuga", "Qual EPI ï¿½ indicado para trabalhos sobre o mar?"),
+		new Pergunta("9PSL", "3FWD3", "Qual o cï¿½digo de aerodromo privado de P-07?"),
+		new Pergunta("Radio-operador de Plataforma Maritma", "Revoluï¿½ï¿½es por Minuto", "Qual RPM deve possuir carteira de registro junto ï¿½ bandeira panamenha?"),
+		new Pergunta("U", "F", "Qual letra ï¿½ sinalizada em cï¿½digo morse pela buzina de cerraï¿½ï¿½o?"),
+		new Pergunta("RIPEAM", "RIPANï¿½OCHORï¿½", "Qual o regulamento internacional para evitar abalroamentos no mar?"),
+		new Pergunta("Escada Portï¿½til", "Caixote Robusto", "Qual deve ser utilizado para acessar partes altas de um armï¿½rio?"),
+		new Pergunta("11 Atitudes da UO-BC", "Regra inominï¿½vel de Diamante", "Qual ï¿½ a iniciativa oficial da UO-BC para melhoria da qualidade dos relacionamentos no ambiente de trabalho?"),
+		new Pergunta("Utiliza o trava quedas", "Segura na mï¿½o de Deus e vai", "O que se faz para acessar a sala de bombas de P-07?"),
+		new Pergunta("Grupo de Controle da Fonte", "Grupo de Controle de Impacto", "Qual grupo ï¿½ responsï¿½vel pela seguranï¿½a da planta de processos durante uma faina de emergï¿½ncias?"),
+		new Pergunta("ï¿½gua salgada", "Pï¿½ quï¿½mico ABC", "Qual Nï¿½O deve ser utilizado como extintor em princï¿½pios de incï¿½ndio classe C?"),
+		new Pergunta("Dois Cipistas eleitos", "Trï¿½s Cipistas indicados", "A presenï¿½a de quais membros ï¿½ um requisito para a realizaï¿½ï¿½o da reuniï¿½o da CIPA?"),
+		new Pergunta("Quinzenal", "A cada 21 dias", "De acordo com o PP-3UBC-00402, qual a frequï¿½ncia de treinamentos do cenï¿½rio de incï¿½ndio?"),
+		new Pergunta("3", "1", "Se a frequï¿½ncia do treinamento de do cenï¿½rio de desastres naturais ï¿½ anual, ao todo quantos treinamentos desse cenï¿½rio devem ter sido realizados em 2018?"),
+		new Pergunta("Salto na ï¿½gua", "Abduï¿½ï¿½o por seres do planeta Nibiru", "Qual a ï¿½ltima opï¿½ï¿½o para abandono de uma unidade marï¿½tma em emergï¿½ncia?"),
+		new Pergunta("Fibras", "Cabos coaxiais", "O consumo de qual estï¿½ associado ï¿½ sensaï¿½ï¿½o de saciedade e ï¿½ motilidade intestinal?"),
+		new Pergunta("Puniï¿½ï¿½o", "Reflexï¿½o", "Qual nï¿½o faz parte do programa amigo do peito?"),
+		new Pergunta("Frustraï¿½ï¿½o", "Santa Catarina", "Qual ï¿½ um estado crï¿½tico?"),
+		new Pergunta("Safe Start", "Manual de Seguranï¿½a do E&P", "A qual deles sï¿½o associados os conceitos de Estados crï¿½ticos e erros crï¿½ticos?")
 	]};
 
 var tempo = 180;
@@ -205,8 +209,6 @@ function mostraTempo(){
 }
 
 function timer() {
-	//alert("tempo: "+tempo);
-	//alert("t: "+t);
 	tempo--;
 	mostraTempo();
 	if (tempo == 0){
@@ -214,10 +216,7 @@ function timer() {
 		clearInterval(timerID);
 		timerID = setInterval(timeAttack, 6000);
 		fuefuefue.play();
-
-		//$("#divTimeAttack").css("display","block");
-
-		
+	
 		
 	} 
 }
