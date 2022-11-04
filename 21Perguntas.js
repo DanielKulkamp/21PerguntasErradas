@@ -4,82 +4,6 @@ var fuefuefue = new Audio('./fuefuefue.mp3');
 var miseravi = new Audio('./miseravi.mp3');
 var lose = new Audio('./lose.mp3');
 
-function certou(){
-	perguntaAtual++;
-	if(perguntaAtual >= 21){
-		clearInterval(timerID);
-		miseravi.play();
-		$("#numPerg21").css("color","#FF0");
-		alert("Venceu!");		
-	} else {
-		mostraPergunta();
-	}    
-}
-
-function erro(){
-	errou.play();
-    voltaPergunta = perguntaAtual;
-    perguntaAtual = 0;
-    mostraPergunta();
-}
-
-
-document.addEventListener('DOMContentLoaded', (event)=>{
-	alert("oi!")
-	d
-})
-
-document.addEventListener('keydown', function(event){
-    switch(event.keyCode){
-    	case 38:
-    		if(listaDePerguntas[perguntaAtual].errado == $("#opcao1").text()){
-    			certou();
-    		} else {
-    			erro();
-    		}
-    		break;
-    	case 40:
-    		if(listaDePerguntas[perguntaAtual].errado == $("#opcao2").text()){
-	 			certou();
-    		} else {
-    			erro();
-    		}
-    		break;
-    	case 8:
-    		perguntaAtual = voltaPergunta;
-    		mostraPergunta();
-    		break;
-    	case 32:
-    		if (fase == timeAttack){
-    			clearInterval(timerID);
-    			alert("timer parou!");
-    		}
-    	default:
-    		//alert(event.keyCode);
-
-    }
-} );
-
-document.addEventListener('mousedown', function(event){
-    if (event.button == 1 && fase == "normal"){
-		beee.play();
-		voltaPergunta = perguntaAtual;
-    	perguntaAtual = 0;
-    	mostraPergunta();
-    }
-} );
-
-document.addEventListener('contextmenu', function(event){
-    return false;
-} );
-
-function Pergunta(certo, errado, pergunta) {
-  this.certo = certo;
-  this.errado = errado;
-  this.pergunta = pergunta;
-  this.ordem = ordem = Math.floor(Math.random() * 2) +1;
-}
-
 var catalogo = {
 	"ver1": [
 		new Pergunta("C", "A", "Qual tipo de incêndio é caracterizado pela presen�a de energia el�trica?"),
@@ -172,14 +96,94 @@ var catalogo = {
 		new Pergunta("Puni��o", "Reflex�o", "Qual n�o faz parte do programa amigo do peito?"),
 		new Pergunta("Frustra��o", "Santa Catarina", "Qual � um estado cr�tico?"),
 		new Pergunta("Safe Start", "Manual de Seguran�a do E&P", "A qual deles s�o associados os conceitos de Estados cr�ticos e erros cr�ticos?")
-	]};
+	],
+};
+
+
+
+function certou(){
+	perguntaAtual++;
+	if(perguntaAtual >= 21){
+		clearInterval(timerID);
+		miseravi.play();
+		$("#numPerg21").css("color","#FF0");
+		alert("Venceu!");		
+	} else {
+		mostraPergunta();
+	}    
+}
+
+function erro(){
+	errou.play();
+    voltaPergunta = perguntaAtual;
+    perguntaAtual = 0;
+    mostraPergunta();
+}
+
+
+document.addEventListener('DOMContentLoaded', (event)=>{
+	for (const key in catalogo){
+		console.log(key, catalogo[key])
+		let version = document.createElement("option")
+		version.value = key
+		version.textContent = key
+		document.getElementById("selVers").appendChild(version)
+	}
+	
+})
+
+document.addEventListener('keydown', function(event){
+	switch(event.code){
+    	case "ArrowUp":
+    		if(listaDePerguntas[perguntaAtual].errado == $("#opcao1").text()){
+    			certou();
+    		} else {
+    			erro();
+    		}
+    		break;
+    	case "ArrowDown":
+    		if(listaDePerguntas[perguntaAtual].errado == $("#opcao2").text()){
+	 			certou();
+    		} else {
+    			erro();
+    		}
+    		break;
+    	case "Backspace":
+    		perguntaAtual = voltaPergunta;
+    		mostraPergunta();
+    		break;
+    	default:
+    		//alert(event.keyCode);
+
+    }
+} );
+
+document.addEventListener('mousedown', function(event){
+    if (event.button == 1){
+		beee.play();
+		voltaPergunta = perguntaAtual;
+    	perguntaAtual = 0;
+    	mostraPergunta();
+    }
+} );
+
+document.addEventListener('contextmenu', function(event){
+    return false;
+} );
+
+function Pergunta(certo, errado, pergunta) {
+  this.certo = certo;
+  this.errado = errado;
+  this.pergunta = pergunta;
+  this.ordem = ordem = Math.floor(Math.random() * 2) +1;
+}
+
 
 var tempo = 180;
 var perguntaAtual = -1;
 var listaDePerguntas = [];
 var timerID = 0;
 var voltaPergunta = 0;
-var fase = "parado"
 var bis = 20;
 
 
@@ -193,8 +197,7 @@ function mostraPergunta() {
 		$("#opcao2").html(listaDePerguntas[perguntaAtual].errado);
 	}
 	for(var i = 0; i<(perguntaAtual);i++){
-		//alert();
-		$("#numPerg"+(i+1)).css("color","#FF0");
+				$("#numPerg"+(i+1)).css("color","#FF0");
 	}
 	for (i = perguntaAtual;i<21;i++){
 		//alert("#numPerg"+(i+1));
@@ -212,44 +215,15 @@ function timer() {
 	tempo--;
 	mostraTempo();
 	if (tempo == 0){
-		fase = "timeAttack";
 		clearInterval(timerID);
-		timerID = setInterval(timeAttack, 6000);
 		fuefuefue.play();
-	
-		
 	} 
 }
 
-function mostraBis(){
-	var stringbis = "" ;
-	if (bis != 14) {
-		for (var i = 0; i< bis; i++){
-			stringbis = stringbis + "<img src='./bis2.png'></img>";
-		}
-		$("#divTimeAttack").html(stringbis);
-	} else {
-		$("#divTimeAttack").html("<img src='./14bis.png'>");
-	}
-
-}
-
-function timeAttack(){
-	bis--;
-	mostraBis();
-	if (bis == 0){
-		clearInterval(timerID);
-		fuefuefue.play();
-	}
-	else {
-		lose.play();
-	}
-}
 
 var jogo = null;
 function iniciar(){
 	clearInterval(timerID);
-	fase = "normal";
 	tempo = 180;
 	bis = 20;
 	perguntaAtual = 0;
